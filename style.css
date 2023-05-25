@@ -1,0 +1,87 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+/* elipses */
+.container::before{
+    content: '';
+    position: absolute;
+    height: 330px;
+    width: 330px;
+    border-radius: 50%;
+    background: linear-gradient(231.94deg, #2B4463 6.81%, #3F5B80 104.74%);
+    transform: translate(-460px, -200px);
+}
+
+.container::after{
+    content: '';
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background:  linear-gradient(230.77deg, #42768C 0%, #7CD3DD 112.39%);
+    transform: translate(550px, 260px);
+}
+
+/* Efeito vidro */
+.container .box{
+    height: 86vh;
+    width: 75%;
+    padding: 0.20px;
+    background: RGBA(255, 255, 255, 0.1);
+    z-index: 10;
+    font-display: flex;
+    position: relative;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.7); 
+    backdrop-filter: blur(10px);
+    box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.25)
+}
+
+/* NavList */
+
+.navlist{
+    height: 7%;
+    width: 95%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px auto;
+    padding: 20px;
+}
+
+.logo{
+    font-size: 2rem;
+}
+
+.navlist ul li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+/* footer */
+.footer{
+    position: relative;
+    top: 1rem
+}
+
+.footer a{
+    color: #7CD3DD;
+    font-weight: 700;
+}
